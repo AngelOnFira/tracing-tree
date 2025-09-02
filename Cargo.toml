@@ -11,14 +11,14 @@ rust-version = "1.70"
 resolver = "2"
 
 [dependencies]
-tracing-core = "0.1"
-tracing-subscriber = { version = "0.3", default-features = false, features = [
+tracing-core = { git = "https://github.com/angelonfira/tracing" }
+tracing-subscriber = { git = "https://github.com/angelonfira/tracing", default-features = false, features = [
     "registry",
     "fmt",
     "std",
 ] }
 nu-ansi-term = "0.50.0"
-tracing-log = { version = "0.2", optional = true, default-features = false, features = [
+tracing-log = { git = "https://github.com/angelonfira/tracing", optional = true, default-features = false, features = [
     "std",
     "log-tracer",
 ] }
